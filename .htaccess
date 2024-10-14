@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ktm.stie-stmy.ac.id [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://ktm.stie-stmy.ac.id/$1 [R,L]
